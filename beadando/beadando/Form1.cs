@@ -21,5 +21,21 @@ namespace beadando
             
            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml("adatok.xml");
+            foreach (XmlElement element in doc.DocumentElement)
+            { 
+            
+            
+            
+            
+            
+            
+            
+            }
+        }
     }
 }
