@@ -1,74 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Vasarlok>
-  <Vasarlo>
-    <Email>kissreka@gmail.com</Email>
-    <Nev>Kiss Réka</Nev>
-    <Nem>2</Nem>
-    <Osszeg>6340</Osszeg>
-    <Mennyiseg>2</Mennyiseg>
-    <Honap>1</Honap>
-  </Vasarlo>
-  <Vasarlo>
-    <Email>nagygabor@gmail.com</Email>
-    <Nev>Nagy Gábor</Nev>
-    <Nem>1</Nem>
-    <Osszeg>3999</Osszeg>
-    <Mennyiseg>1</Mennyiseg>
-    <Honap>2</Honap>
-  </Vasarlo>
-  <Vasarlo>
-    <Email>milan123@gmail.com</Email>
-    <Nev>Trexler Milan</Nev>
-    <Nem>1</Nem>
-    <Osszeg>2690</Osszeg>
-    <Mennyiseg>1</Mennyiseg>
-    <Honap>2</Honap>
-  </Vasarlo>
-  <Vasarlo>
-    <Email>karsaiviki@gmail.com</Email>
-    <Nev>Karsai Viktória</Nev>
-    <Nem>2</Nem>
-    <Osszeg>3499</Osszeg>
-    <Mennyiseg>1</Mennyiseg>
-    <Honap>3</Honap>
-  </Vasarlo>
-  <Vasarlo>
-    <Email>langalexandra@gmail.com</Email>
-    <Nev>Lang Alexandra</Nev>
-    <Nem>2</Nem>
-    <Osszeg>7640</Osszeg>
-    <Mennyiseg>3</Mennyiseg>
-    <Honap>3</Honap>
-  </Vasarlo>
-  <Vasarlo>
-    <Email>langalexandra@gmail.com</Email>
-    <Nev>Lang Alexandra</Nev>
-    <Nem>2</Nem>
-    <Osszeg>7640</Osszeg>
-    <Mennyiseg>3</Mennyiseg>
-    <Honap>3</Honap>
-  </Vasarlo>
-  <Vasarlo>
-    <Email>kerekeniko@gmail.com</Email>
-    <Nev>Kerek Enikő</Nev>
-    <Nem>2</Nem>
-    <Osszeg>1490</Osszeg>
-    <Mennyiseg>1</Mennyiseg>
-    <Honap>3</Honap>
-  </Vasarlo>
-  <Vasarlo>
-    <Email>papplilla@gmail.com</Email>
-    <Nev>Papp Lilla</Nev>
-    <Nem>2</Nem>
-    <Osszeg>11690</Osszeg>
-    <Mennyiseg>3</Mennyiseg>
-    <Honap>4</Honap>
-  </Vasarlo>
-  <Vasarlo>
-    <Email>nagyelek@gmail.com</Email>
-    <Nev>Nagy Elek</Nev>
-    <Nem>1</Nem>
-    <Osszeg>12690</Osszeg>
-    <Mennyiseg>4</Mennyiseg>
-    <Honap>4</Honap>
-  </Vasarlo>
+	<Vasarlo>
+		<Email>kissreka@gmail.com</Email>
+		<Nev>Kiss Réka</Nev>
+		<Nem>2</Nem>
+		<Osszeg>6340</Osszeg>
+		<Mennyiseg>2</Mennyiseg>
+		<Honap>1</Honap>
+	</Vasarlo>
+	<Vasarlo>
+		<Email>nagygabor@gmail.com</Email>
+		<Nev>Nagy Gábor</Nev>
+		<Nem>1</Nem>
+		<Osszeg>3999</Osszeg>
+		<Mennyiseg>1</Mennyiseg>
+		<Honap>2</Honap>
+	</Vasarlo>
+	<Vasarlo>
+		<Email>milan123@gmail.com</Email>
+		<Nev>Trexler Milan</Nev>
+		<Nem>1</Nem>
+		<Osszeg>2690</Osszeg>
+		<Mennyiseg>1</Mennyiseg>
+		<Honap>2</Honap>
+	</Vasarlo>
+	<Vasarlo>
+		<Email>karsaiviki@gmail.com</Email>
+		<Nev>Karsai Viktória</Nev>
+		<Nem>2</Nem>
+		<Osszeg>3499</Osszeg>
+		<Mennyiseg>1</Mennyiseg>
+		<Honap>3</Honap>
+	</Vasarlo>
+	<Vasarlo>
+		<Email>langalexandra@gmail.com</Email>
+		<Nev>Lang Alexandra</Nev>
+		<Nem>2</Nem>
+		<Osszeg>7640</Osszeg>
+		<Mennyiseg>3</Mennyiseg>
+		<Honap>3</Honap>
+	</Vasarlo>
+	<Vasarlo>
+		<Email>langalexandra@gmail.com</Email>
+		<Nev>Lang Alexandra</Nev>
+		<Nem>2</Nem>
+		<Osszeg>7640</Osszeg>
+		<Mennyiseg>3</Mennyiseg>
+		<Honap>3</Honap>
+	</Vasarlo>
+	<Vasarlo>
+		<Email>kerekeniko@gmail.com</Email>
+		<Nev>Kerek Enikő</Nev>
+		<Nem>2</Nem>
+		<Osszeg>1490</Osszeg>
+		<Mennyiseg>1</Mennyiseg>
+		<Honap>3</Honap>
+	</Vasarlo>
+	<Vasarlo>
+		<Email>papplilla@gmail.com</Email>
+		<Nev>Papp Lilla</Nev>
+		<Nem>2</Nem>
+		<Osszeg>11690</Osszeg>
+		<Mennyiseg>3</Mennyiseg>
+		<Honap>4</Honap>
+	</Vasarlo>
+	<Vasarlo>
+		<Email>nagyelek@gmail.com</Email>
+		<Nev>Nagy Elek</Nev>
+		<Nem>1</Nem>
+		<Osszeg>12690</Osszeg>
+		<Mennyiseg>4</Mennyiseg>
+		<Honap>4</Honap>
+	</Vasarlo>
 </Vasarlok>
