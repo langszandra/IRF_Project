@@ -42,8 +42,13 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnCreate = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.dgvLoadAddressBook = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLoadAddressBook)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -161,17 +166,62 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(49, 76);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(95, 37);
+            this.btnCreate.TabIndex = 4;
+            this.btnCreate.Text = "CreateXML";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(549, 88);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(95, 37);
+            this.btnLoad.TabIndex = 5;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // dgvLoadAddressBook
+            // 
+            this.dgvLoadAddressBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLoadAddressBook.Location = new System.Drawing.Point(35, 145);
+            this.dgvLoadAddressBook.Name = "dgvLoadAddressBook";
+            this.dgvLoadAddressBook.RowHeadersWidth = 51;
+            this.dgvLoadAddressBook.RowTemplate.Height = 24;
+            this.dgvLoadAddressBook.Size = new System.Drawing.Size(609, 224);
+            this.dgvLoadAddressBook.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(375, 88);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 37);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Szamol";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dgvLoadAddressBook);
+            this.Controls.Add(this.btnLoad);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLoadAddressBook)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +240,10 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.DataGridView dgvLoadAddressBook;
+        private System.Windows.Forms.Button button1;
     }
 }
 
