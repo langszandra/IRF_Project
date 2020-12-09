@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bejelentkezes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bejelentkezes.Designer.cs">
+      <DependentUpon>Bejelentkezes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Data.cs" />
     <Compile Include="Entities\Gender.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -55,6 +62,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bejelentkezes.resx">
+      <DependentUpon>Bejelentkezes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
