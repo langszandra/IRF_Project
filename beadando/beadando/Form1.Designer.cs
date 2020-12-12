@@ -78,7 +78,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(692, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(692, 31);
             this.bindingNavigator1.TabIndex = 3;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -88,7 +88,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
@@ -215,11 +215,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(18, 401);
+            this.label2.Location = new System.Drawing.Point(18, 393);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(442, 18);
+            this.label2.Size = new System.Drawing.Size(382, 18);
             this.label2.TabIndex = 9;
-            this.label2.Text = "A szürök alkalmazásához kattins a szürök használata gombra";
+            this.label2.Text = "Az éves statisztikákért kattinst a Statisztikák gombra";
             // 
             // button1
             // 
@@ -231,7 +231,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 34);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Szürök használata";
+            this.button1.Text = "Statisztikák";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

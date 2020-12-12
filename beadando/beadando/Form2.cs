@@ -1,4 +1,5 @@
-﻿using System;
+﻿using beadando.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,23 +8,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace beadando
 {
     public partial class Form2 : Form
     {
+        
+        /*BindingList<Data> Datas = new BindingList<Data>();*/
+
         public Form2()
         {
             InitializeComponent();
+              
+            
+
         }
-        //combobox//
-        /*var xmlDocument = XDocument.Load("Contacts.xml");
-        var selectednev = from dc1 in xmlDocument.Descendants("Felhasznalonev")
-                       select dc1.Value;
-        var selectednem = from dc3 in xmlDocument.Descendants("Nem")
-                          select dc3.Value;
-        var selecteddate = from dc4 in xmlDocument.Descendants("Datum")
-                         select dc4.Value;
-        comboBox1.DataSource = selectednev.ToList();*/
+        private void AdatokLekerese()
+        {
+            
+
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Éves bevétel//
+            var doc = XDocument.Load("Contacts.xml");
+            var sum = (from nd in doc.Descendants("Osszeg")
+                       select Int32.Parse(nd.Value)).Sum();
+            textBox1.AppendText(sum.ToString()+" Ft");
+
+            //Vásárlók összesen//
+            var xml = XDocument.Load("Contacts.xml");
+            int count = xml.Descendants("Nem").Count();
+            textBox2.AppendText(count.ToString() + " db");
+
+            //Nemek szerinti megoszlás//
+            var nok = (from nd in doc.Descendants("Nem")
+                       where nd.Value=="1"
+                       select nd.Value).Count();
+            textBox3.AppendText(nok.ToString()+" db");
+
+            var ferfi = (from nd in doc.Descendants("Nem")
+                       where nd.Value == "2"
+                       select nd.Value).Count();
+            textBox4.AppendText(ferfi.ToString()+" db");
+
+
+        }
+
+        
     }
 }

@@ -12,9 +12,8 @@ namespace beadando.Entities
 
         public string Username { get; set; }
         public Gender Gender { get; set; }
-        public DateTime Idopont { get; set; }
-       
-
+        public DateTime Idopont { get; set; }       
+        public int Osszeg { get; set; }
 
     }
 }

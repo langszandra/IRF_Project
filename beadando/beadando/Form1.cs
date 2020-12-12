@@ -32,7 +32,7 @@ namespace beadando
             dt.TableName="Contact";
             DataColumn dc1 = new DataColumn("Felhasznalonev", typeof(string));
             DataColumn dc2 = new DataColumn("Osszeg",typeof(Int32));
-            DataColumn dc3 = new DataColumn("Nem",typeof(Int32));
+            DataColumn dc3 = new DataColumn("Nem",typeof(string));
             DataColumn dc4 = new DataColumn("Datum", typeof(DateTime));
 
             dt.Columns.Add(dc1);
@@ -76,6 +76,7 @@ namespace beadando
             DataSet dsLoad = new DataSet();
             dsLoad.ReadXml("Contacts.xml");
             dgvLoadAddressBook.DataSource = dsLoad.Tables[0];
+           
             
 
             
@@ -86,6 +87,7 @@ namespace beadando
         {
             Form2 f2 = new Form2();
             f2.Show();
+            
         }
     }
 }
