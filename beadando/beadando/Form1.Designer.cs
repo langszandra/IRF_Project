@@ -45,6 +45,9 @@
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.dgvLoadAddressBook = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoadAddressBook)).BeginInit();
@@ -75,7 +78,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(800, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(692, 27);
             this.bindingNavigator1.TabIndex = 3;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -167,39 +170,80 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(49, 76);
+            this.btnCreate.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnCreate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCreate.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.ForeColor = System.Drawing.Color.Azure;
+            this.btnCreate.Location = new System.Drawing.Point(517, 342);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(95, 37);
+            this.btnCreate.Size = new System.Drawing.Size(163, 34);
             this.btnCreate.TabIndex = 4;
-            this.btnCreate.Text = "CreateXML";
-            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Text = "Adatok betöltése";
+            this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(549, 88);
+            this.btnLoad.Location = new System.Drawing.Point(0, 0);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(95, 37);
-            this.btnLoad.TabIndex = 5;
-            this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            this.btnLoad.Size = new System.Drawing.Size(75, 23);
+            this.btnLoad.TabIndex = 7;
             // 
             // dgvLoadAddressBook
             // 
             this.dgvLoadAddressBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLoadAddressBook.Location = new System.Drawing.Point(12, 131);
+            this.dgvLoadAddressBook.Location = new System.Drawing.Point(21, 59);
             this.dgvLoadAddressBook.Name = "dgvLoadAddressBook";
             this.dgvLoadAddressBook.RowHeadersWidth = 51;
             this.dgvLoadAddressBook.RowTemplate.Height = 24;
-            this.dgvLoadAddressBook.Size = new System.Drawing.Size(674, 267);
+            this.dgvLoadAddressBook.Size = new System.Drawing.Size(640, 267);
             this.dgvLoadAddressBook.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Teal;
+            this.label1.Location = new System.Drawing.Point(18, 350);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(474, 18);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Az összes vásárlás megtekintéséhez kattints az adatok betöltésére";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Teal;
+            this.label2.Location = new System.Drawing.Point(18, 401);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(442, 18);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "A szürök alkalmazásához kattins a szürök használata gombra";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.CadetBlue;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Azure;
+            this.button1.Location = new System.Drawing.Point(517, 393);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(163, 34);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Szürök használata";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.ClientSize = new System.Drawing.Size(692, 435);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvLoadAddressBook);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnCreate);
@@ -231,6 +275,9 @@
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.DataGridView dgvLoadAddressBook;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

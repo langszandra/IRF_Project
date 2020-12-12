@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace beadando.Entities
 {
-    class Data
+    public class Data
 
     {
-        /*public string Date { get; set; }*/
-        public string Name { get; set; }
 
-       /* public int Sum { get; set; }
-        public int Gender { get; set; }*/
+        public string Username { get; set; }
+        public Gender Gender { get; set; }
+        public DateTime Idopont { get; set; }
+       
+
+
     }
 }
