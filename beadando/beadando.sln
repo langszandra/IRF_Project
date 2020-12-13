@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "beadando", "beadando\beadando.csproj", "{8AAA606B-CA24-4BF5-87DD-85F5B12E47A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestExample.Test", "UnitTestExample.Test\UnitTestExample.Test.csproj", "{0763D786-F135-4F3E-90B6-07D7A43F89B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8AAA606B-CA24-4BF5-87DD-85F5B12E47A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AAA606B-CA24-4BF5-87DD-85F5B12E47A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AAA606B-CA24-4BF5-87DD-85F5B12E47A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0763D786-F135-4F3E-90B6-07D7A43F89B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0763D786-F135-4F3E-90B6-07D7A43F89B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0763D786-F135-4F3E-90B6-07D7A43F89B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0763D786-F135-4F3E-90B6-07D7A43F89B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

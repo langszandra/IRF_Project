@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
@@ -13,15 +14,15 @@ namespace beadando
     public partial class Form1 : Form
     {
         BindingList<Data> Rates = new BindingList<Data>();
-        
+
 
 
         public Form1()
         {
             InitializeComponent();
-           
-            
-                       
+
+
+
         }
 
         private void btnCreate_Click(object sender, System.EventArgs e)
@@ -29,10 +30,10 @@ namespace beadando
             //xml létrehozása//
 
             DataTable dt = new DataTable();
-            dt.TableName="Contact";
+            dt.TableName = "Contact";
             DataColumn dc1 = new DataColumn("Felhasznalonev", typeof(string));
-            DataColumn dc2 = new DataColumn("Osszeg",typeof(Int32));
-            DataColumn dc3 = new DataColumn("Nem",typeof(string));
+            DataColumn dc2 = new DataColumn("Osszeg", typeof(Int32));
+            DataColumn dc3 = new DataColumn("Nem", typeof(string));
             DataColumn dc4 = new DataColumn("Datum", typeof(DateTime));
 
             dt.Columns.Add(dc1);
@@ -42,7 +43,7 @@ namespace beadando
 
             dt.Rows.Add("langszandra", "6540", "2", "2020-01-10");
             dt.Rows.Add("dudaseszter", "6540", "2", "2020-01-10");
-            dt.Rows.Add("juhaszndora", "3600", "2","2020-01-01");
+            dt.Rows.Add("juhaszndora", "3600", "2", "2020-01-01");
             dt.Rows.Add("muskatkristof", "3200", "1", "2020-02-12");
             dt.Rows.Add("kissalexandra", "4400", "2", "2020-02-10");
             dt.Rows.Add("nagyangelika", "5680", "2", "2020-02-10");
@@ -76,10 +77,10 @@ namespace beadando
             DataSet dsLoad = new DataSet();
             dsLoad.ReadXml("Contacts.xml");
             dgvLoadAddressBook.DataSource = dsLoad.Tables[0];
-           
-            
 
-            
+
+
+
 
         }
 
@@ -87,7 +88,9 @@ namespace beadando
         {
             Form2 f2 = new Form2();
             f2.Show();
-            
+
         }
+
     }
+
 }
