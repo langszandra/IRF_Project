@@ -35,13 +35,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.dgwAccounts = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwAccounts)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(184, 102);
+            this.txtEmail.Location = new System.Drawing.Point(184, 82);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(275, 22);
@@ -49,7 +49,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(184, 132);
+            this.txtPassword.Location = new System.Drawing.Point(184, 112);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -58,7 +58,7 @@
             // 
             // txtPasswordConfirm
             // 
-            this.txtPasswordConfirm.Location = new System.Drawing.Point(184, 162);
+            this.txtPasswordConfirm.Location = new System.Drawing.Point(184, 142);
             this.txtPasswordConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.txtPasswordConfirm.Name = "txtPasswordConfirm";
             this.txtPasswordConfirm.PasswordChar = '*';
@@ -67,27 +67,34 @@
             // 
             // lblPasswordConfirm
             // 
-            this.lblPasswordConfirm.Location = new System.Drawing.Point(43, 161);
+            this.lblPasswordConfirm.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lblPasswordConfirm.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPasswordConfirm.ForeColor = System.Drawing.Color.Teal;
+            this.lblPasswordConfirm.Location = new System.Drawing.Point(7, 138);
             this.lblPasswordConfirm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPasswordConfirm.Name = "lblPasswordConfirm";
-            this.lblPasswordConfirm.Size = new System.Drawing.Size(133, 25);
+            this.lblPasswordConfirm.Size = new System.Drawing.Size(169, 30);
             this.lblPasswordConfirm.TabIndex = 10;
-            this.lblPasswordConfirm.Text = "Confirm password:";
+            this.lblPasswordConfirm.Text = "Jelszó megerösítése:";
             this.lblPasswordConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(43, 131);
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Teal;
+            this.label1.Location = new System.Drawing.Point(43, 111);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 25);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Password:";
+            this.label1.Text = "Jelszó:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblEmail
             // 
-            this.lblEmail.Location = new System.Drawing.Point(43, 102);
+            this.lblEmail.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.Teal;
+            this.lblEmail.Location = new System.Drawing.Point(43, 82);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(133, 25);
@@ -97,35 +104,47 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(54, 204);
+            this.btnRegister.BackColor = System.Drawing.Color.Teal;
+            this.btnRegister.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.ForeColor = System.Drawing.Color.Azure;
+            this.btnRegister.Location = new System.Drawing.Point(54, 185);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(405, 57);
             this.btnRegister.TabIndex = 4;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Text = "Tovább";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // dgwAccounts
+            // label2
             // 
-            this.dgwAccounts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgwAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwAccounts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgwAccounts.Location = new System.Drawing.Point(480, 88);
-            this.dgwAccounts.Margin = new System.Windows.Forms.Padding(4);
-            this.dgwAccounts.Name = "dgwAccounts";
-            this.dgwAccounts.RowHeadersWidth = 51;
-            this.dgwAccounts.Size = new System.Drawing.Size(478, 173);
-            this.dgwAccounts.TabIndex = 10;
-            this.dgwAccounts.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Teal;
+            this.label2.Location = new System.Drawing.Point(12, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(482, 16);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Az adatok eléréséhez elöször meg kell adnod az e-mail címed és egy jelszót";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Teal;
+            this.label3.Location = new System.Drawing.Point(146, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(249, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Ezt követöen kattints a tovább gombra";
             // 
             // Regisztracio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 296);
-            this.Controls.Add(this.dgwAccounts);
+            this.ClientSize = new System.Drawing.Size(496, 257);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lblPasswordConfirm);
             this.Controls.Add(this.label1);
@@ -135,7 +154,6 @@
             this.Controls.Add(this.txtEmail);
             this.Name = "Regisztracio";
             this.Text = "Regisztracio";
-            ((System.ComponentModel.ISupportInitialize)(this.dgwAccounts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +168,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.DataGridView dgwAccounts;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

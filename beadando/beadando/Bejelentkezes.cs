@@ -12,8 +12,8 @@ namespace beadando
 {
     public partial class Bejelentkezes : Form
     {
-        string[] felhasznalo = { "Láng Alexandra", "Kecskés Klaudia" };
-        string[] jel = { "jelszo12", "98765" };
+        string[] felhasznalo = { "langszandra@gmail.com"};
+        string[] jel = { "Jelszo12" };
 
         public Bejelentkezes()
         {
@@ -34,8 +34,14 @@ namespace beadando
 
             else
             {
-                MessageBox.Show("Rossz felhasználónév vagy jelszó, próbáld újra!");
+                MessageBox.Show("Rossz e-mail cím vagy jelszó, próbáld újra!");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Regisztracio reg = new Regisztracio();
+            reg.Show();
         }
     }
 }

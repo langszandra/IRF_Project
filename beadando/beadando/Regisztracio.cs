@@ -32,27 +32,35 @@ namespace beadando
         public Regisztracio()
         {
             InitializeComponent();
-            PasswordCheckPassed = true;
-            dgwAccounts.DataSource = _controller.AccountManager.Accounts;
+            passwordCheckPassed = true;
+            
         }
 
         private void OnPasswordTextChanged(object sender, EventArgs e)
         {
-            PasswordCheckPassed = txtPassword.Text.Equals(txtPasswordConfirm.Text);
+            passwordCheckPassed = txtPassword.Text.Equals(txtPasswordConfirm.Text);
         }
 
         private void OnRegisterClick(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
         {
             try
             {
                 _controller.Register(
                     txtEmail.Text,
                     txtPassword.Text);
+                Form1 f1 = new Form1();
+                f1.Show();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            
         }
     }
 }
