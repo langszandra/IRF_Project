@@ -1,5 +1,6 @@
 ﻿using beadando.Entities;
 using System;
+using System.Activities.Expressions;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,9 +17,8 @@ namespace beadando
 {
     public partial class Form2 : Form
     {
-        
-        /*BindingList<Data> Datas = new BindingList<Data>();*/
-
+        enum gender { Nő=2, Férfi=1}
+      
         public Form2()
         {
             InitializeComponent();
@@ -40,16 +40,10 @@ namespace beadando
             int count = xml.Descendants("Nem").Count();
             textBox2.AppendText(count.ToString() + " db");
 
-            //Nemek szerinti megoszlás//
-            var nok = (from nd in xml.Descendants("Nem")
-                       where nd.Value=="1"
-                       select nd.Value).Count();
-            textBox3.AppendText(nok.ToString()+" db");
+            
+            
 
-            var ferfi = (from nd in xml.Descendants("Nem")
-                       where nd.Value == "2"
-                       select nd.Value).Count();
-            textBox4.AppendText(ferfi.ToString()+" db");
+            
 
 
         }
@@ -93,6 +87,30 @@ namespace beadando
 
             }
 
+        }
+        //Nemek szerinti megoszlás//
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            var xml = XDocument.Load("Contacts.xml");
+            
+            var nok = (from nd in xml.Descendants("Nem")
+                       where nd.Value == "1"
+                       select nd.Value).Count();
+            string str= Enum.GetName(typeof(gender),2);
+            textBox3.AppendText(str+":"+nok.ToString() + " db");
+
+             
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            var xml = XDocument.Load("Contacts.xml");
+            var ferfi = (from nd in xml.Descendants("Nem")
+                         where nd.Value == "2"
+                         select nd.Value).Count();
+            string str = Enum.GetName(typeof(gender), 1);
+            textBox4.AppendText(str+":"+ferfi.ToString() + " db");;
         }
     }
 }

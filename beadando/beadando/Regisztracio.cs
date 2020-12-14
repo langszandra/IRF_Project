@@ -15,36 +15,15 @@ namespace beadando
     {
         private AccountController _controller = new AccountController();
 
-        private bool passwordCheckPassed;
-        public bool PasswordCheckPassed
-        {
-            get { return passwordCheckPassed; }
-            set
-            {
-                passwordCheckPassed = value;
-                btnRegister.Enabled = passwordCheckPassed;
-                if (passwordCheckPassed)
-                    txtPasswordConfirm.BackColor = Color.White;
-                else
-                    txtPasswordConfirm.BackColor = Color.Red;
-            }
-        }
+       
+        
         public Regisztracio()
         {
             InitializeComponent();
-            passwordCheckPassed = true;
+           
             
         }
-
-        private void OnPasswordTextChanged(object sender, EventArgs e)
-        {
-            passwordCheckPassed = txtPassword.Text.Equals(txtPasswordConfirm.Text);
-        }
-
-        private void OnRegisterClick(object sender, EventArgs e)
-        {
-           
-        }
+       
 
         private void btnRegister_Click(object sender, EventArgs e)
         {

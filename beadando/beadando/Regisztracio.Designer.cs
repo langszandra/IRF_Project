@@ -30,8 +30,6 @@
         {
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtPasswordConfirm = new System.Windows.Forms.TextBox();
-            this.lblPasswordConfirm = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -55,28 +53,6 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(275, 22);
             this.txtPassword.TabIndex = 1;
-            // 
-            // txtPasswordConfirm
-            // 
-            this.txtPasswordConfirm.Location = new System.Drawing.Point(184, 142);
-            this.txtPasswordConfirm.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPasswordConfirm.Name = "txtPasswordConfirm";
-            this.txtPasswordConfirm.PasswordChar = '*';
-            this.txtPasswordConfirm.Size = new System.Drawing.Size(275, 22);
-            this.txtPasswordConfirm.TabIndex = 3;
-            // 
-            // lblPasswordConfirm
-            // 
-            this.lblPasswordConfirm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lblPasswordConfirm.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasswordConfirm.ForeColor = System.Drawing.Color.Teal;
-            this.lblPasswordConfirm.Location = new System.Drawing.Point(7, 138);
-            this.lblPasswordConfirm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPasswordConfirm.Name = "lblPasswordConfirm";
-            this.lblPasswordConfirm.Size = new System.Drawing.Size(169, 30);
-            this.lblPasswordConfirm.TabIndex = 10;
-            this.lblPasswordConfirm.Text = "Jelszó megerösítése:";
-            this.lblPasswordConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
@@ -107,7 +83,7 @@
             this.btnRegister.BackColor = System.Drawing.Color.Teal;
             this.btnRegister.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.Azure;
-            this.btnRegister.Location = new System.Drawing.Point(54, 185);
+            this.btnRegister.Location = new System.Drawing.Point(54, 140);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(405, 57);
@@ -146,10 +122,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.lblPasswordConfirm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtPasswordConfirm);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
             this.Name = "Regisztracio";
@@ -163,8 +137,6 @@
 
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtPasswordConfirm;
-        private System.Windows.Forms.Label lblPasswordConfirm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button btnRegister;
