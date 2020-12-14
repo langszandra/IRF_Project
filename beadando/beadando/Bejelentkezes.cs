@@ -12,8 +12,8 @@ namespace beadando
 {
     public partial class Bejelentkezes : Form
     {
-        string[] felhasznalo = { "langszandra@gmail.com"};
-        string[] jel = { "Jelszo12" };
+        string[] felhasznalo = { "langszandra@gmail.com", "hedi@gmail.com"};
+        string[] jel = { "Jelszo12", "Jelszo56"};
 
         public Bejelentkezes()
         {
