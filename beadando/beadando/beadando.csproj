@@ -65,7 +65,6 @@
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Entities\Account.cs" />
     <Compile Include="Entities\Data.cs" />
-    <Compile Include="Entities\Gender.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

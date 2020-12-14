@@ -112,5 +112,10 @@ namespace beadando
             string str = Enum.GetName(typeof(gender), 1);
             textBox4.AppendText(str+":"+ferfi.ToString() + " db");;
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

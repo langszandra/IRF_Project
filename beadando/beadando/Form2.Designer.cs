@@ -47,7 +47,7 @@
             this.button1.BackColor = System.Drawing.Color.CadetBlue;
             this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(80, 250);
+            this.button1.Location = new System.Drawing.Point(73, 263);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 33);
             this.button1.TabIndex = 0;
@@ -107,7 +107,7 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(205, 188);
+            this.textBox3.Location = new System.Drawing.Point(205, 176);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 15);
             this.textBox3.TabIndex = 9;
@@ -115,7 +115,7 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(205, 219);
+            this.textBox4.Location = new System.Drawing.Point(205, 208);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 15);
             this.textBox4.TabIndex = 10;
@@ -125,7 +125,7 @@
             this.button2.BackColor = System.Drawing.Color.CadetBlue;
             this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(205, 250);
+            this.button2.Location = new System.Drawing.Point(194, 263);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 33);
             this.button2.TabIndex = 11;
@@ -137,7 +137,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.Teal;
-            this.checkBox1.Location = new System.Drawing.Point(205, 147);
+            this.checkBox1.Location = new System.Drawing.Point(205, 149);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(48, 21);
             this.checkBox1.TabIndex = 12;
@@ -149,7 +149,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.ForeColor = System.Drawing.Color.Teal;
-            this.checkBox2.Location = new System.Drawing.Point(259, 147);
+            this.checkBox2.Location = new System.Drawing.Point(259, 149);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(58, 21);
             this.checkBox2.TabIndex = 13;
@@ -187,6 +187,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
